@@ -5,12 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Card Anatomy Sample</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
     <main id="card-demo">
-        <h1>Cards</h1>
+        <h1>HueShift Card Game</h1>
+        <button class="accordion">Characters</button>
+        <div class="panel">
         <h2>Character Cards</h2>
         <div class="card-wrap">
             <div class="card">
@@ -19,7 +22,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Brave Hero</span></div>
                     <p class="card-ability">Rally</p>
-                    <p class="card-text">Survives with 1 HP instead of destruction.</p>
+                    <ul class="card-text">
+                        <li>Survives with 1 HP instead of destruction.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"She's the reason the retreat became a rally."</p>
                 </div>
                 <div class="card-footer">
@@ -33,7 +39,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Brave Hero</span></div>
                     <p class="card-ability">Steady Hand</p>
-                    <p class="card-text">Survives with 1 HP instead of destruction.</p>
+                    <ul class="card-text">
+                        <li>Survives with 1 HP instead of destruction.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Steps forward when everyone else steps back."</p>
                 </div>
                 <div class="card-footer">
@@ -47,7 +56,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Fearful Hero</span></div>
                     <p class="card-ability">Rally</p>
-                    <p class="card-text">Prevent 1 damage once per game.</p>
+                    <ul class="card-text">
+                        <li>Prevent 1 damage once per game.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"A shield first, a name second."</p>
                 </div>
                 <div class="card-footer">
@@ -61,7 +73,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Fearful Hero</span></div>
                     <p class="card-ability">Steady Hand</p>
-                    <p class="card-text">Prevent 1 damage once per game.</p>
+                    <ul class="card-text">
+                        <li>Prevent 1 damage once per game.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Calm hands stop the bleeding."</p>
                 </div>
                 <div class="card-footer">
@@ -75,7 +90,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Fearless Leader</span></div>
                     <p class="card-ability">Experience</p>
-                    <p class="card-text">+1 AP when destroying units.</p>
+                    <ul class="card-text">
+                        <li>+1 AP when destroying units.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Every fallen foe sharpens her resolve."</p>
                 </div>
                 <div class="card-footer">
@@ -89,7 +107,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Fearless Leader</span></div>
                     <p class="card-ability">Quick Study</p>
-                    <p class="card-text">Allied unit gains +1 AP on first destruction.</p>
+                    <ul class="card-text">
+                        <li>Allied unit gains +1 AP on first destruction.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Teaches the squad to turn losses into gains."</p>
                 </div>
                 <div class="card-footer">
@@ -103,7 +124,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Cutthroat Leader</span></div>
                     <p class="card-ability">Experience</p>
-                    <p class="card-text">+1 AP when destroying units.</p>
+                    <ul class="card-text">
+                        <li>+1 AP when destroying units.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Learns fastest from the harshest lessons."</p>
                 </div>
                 <div class="card-footer">
@@ -117,7 +141,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Cutthroat Leader</span></div>
                     <p class="card-ability">Quick Study</p>
-                    <p class="card-text">Allied unit gains +1 AP on first destruction.</p>
+                    <ul class="card-text">
+                        <li>Allied unit gains +1 AP on first destruction.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Watches, learns, adapts, wins."</p>
                 </div>
                 <div class="card-footer">
@@ -131,7 +158,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Corrupted Brute</span></div>
                     <p class="card-ability">Wild Card</p>
-                    <p class="card-text">Flip coin: Heads +2 AP, Tails +2 HP.</p>
+                    <ul class="card-text">
+                        <li>Flip coin: Heads +2 AP, Tails +2 HP.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Fortune favors the reckless."</p>
                 </div>
                 <div class="card-footer">
@@ -145,7 +175,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Manic Brute</span></div>
                     <p class="card-ability">Even Odds</p>
-                    <p class="card-text">Flip coin: Heads +2 AP, Tails +2 HP.</p>
+                    <ul class="card-text">
+                        <li>Flip coin: Heads +2 AP, Tails +2 HP.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Heads you win, tails you also win."</p>
                 </div>
                 <div class="card-footer">
@@ -159,7 +192,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Corrupted Brute</span></div>
                     <p class="card-ability">Wild Card</p>
-                    <p class="card-text">Flip coin: Heads +1 AP, Tails +1 HP.</p>
+                    <ul class="card-text">
+                        <li>Flip coin: Heads +1 AP, Tails +1 HP.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"A coin flip beats a bad plan."</p>
                 </div>
                 <div class="card-footer">
@@ -173,7 +209,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Manic Brute</span></div>
                     <p class="card-ability">Even Odds</p>
-                    <p class="card-text">Flip coin: Heads +1 AP, Tails +1 HP.</p>
+                    <ul class="card-text">
+                        <li>Flip coin: Heads +1 AP, Tails +1 HP.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Chaos has a face, and it's smiling."</p>
                 </div>
                 <div class="card-footer">
@@ -187,7 +226,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Heavy Gunner</span></div>
                     <p class="card-ability">Focus Fire</p>
-                    <p class="card-text">Ignore Tank damage reduction.</p>
+                    <ul class="card-text">
+                        <li>Ignore Tank damage reduction.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"No wall stops a well-aimed shot."</p>
                 </div>
                 <div class="card-footer">
@@ -201,7 +243,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Precise Gunner</span></div>
                     <p class="card-ability">Focus Fire</p>
-                    <p class="card-text">Ignore Tank damage reduction.</p>
+                    <ul class="card-text">
+                        <li>Ignore Tank damage reduction.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Precision cuts through any defense."</p>
                 </div>
                 <div class="card-footer">
@@ -215,7 +260,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Heavy Gunner</span></div>
                     <p class="card-ability">Steady Aim</p>
-                    <p class="card-text">Ignore 1 point of damage reduction.</p>
+                    <ul class="card-text">
+                        <li>Ignore 1 point of damage reduction.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"One shot, no excuses."</p>
                 </div>
                 <div class="card-footer">
@@ -229,7 +277,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Precise Gunner</span></div>
                     <p class="card-ability">Steady Aim</p>
-                    <p class="card-text">Ignore 1 point of damage reduction.</p>
+                    <ul class="card-text">
+                        <li>Ignore 1 point of damage reduction.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Back before you even flinch."</p>
                 </div>
                 <div class="card-footer">
@@ -243,7 +294,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Vengeful Sworder</span></div>
                     <p class="card-ability">Bleed</p>
-                    <p class="card-text">Target loses 1 HP next turn.</p>
+                    <ul class="card-text">
+                        <li>Target loses 1 HP next turn.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"A cut today, a fall tomorrow."</p>
                 </div>
                 <div class="card-footer">
@@ -257,7 +311,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Mournful Sworder</span></div>
                     <p class="card-ability">Bleed</p>
-                    <p class="card-text">Target loses 1 HP next turn.</p>
+                    <ul class="card-text">
+                        <li>Target loses 1 HP next turn.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Patience is just a slower blade."</p>
                 </div>
                 <div class="card-footer">
@@ -271,7 +328,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Vengeful Sworder</span></div>
                     <p class="card-ability">Nick</p>
-                    <p class="card-text">When attacking, target loses 1 additional HP.</p>
+                    <ul class="card-text">
+                        <li>When attacking, target loses 1 additional HP.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"Never strikes just once."</p>
                 </div>
                 <div class="card-footer">
@@ -285,7 +345,10 @@
                 <div class="card-body">
                     <div class="card-meta"><span class="card-role">Mournful Sworder</span></div>
                     <p class="card-ability">Nick</p>
-                    <p class="card-text">When attacking, target loses 1 additional HP.</p>
+                    <ul class="card-text">
+                        <li>When attacking, target loses 1 additional HP.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
                     <p class="card-flavor">"The second cut always finds its mark."</p>
                 </div>
                 <div class="card-footer">
@@ -294,7 +357,355 @@
                 </div>
             </div>
         </div>
+        </div>
+        <button class="accordion active">Mechs</button>
+        <div class="panel">
+        <h2>Mech Cards</h2>
+            <div class="card-wrap mech-cards">
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Cidermayer</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Space Speed</span></div>
+                    <p class="card-ability">Strike First</p>
+                    <ul class="card-text">
+                        <li>Attacks before any enemy unit this turn.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"Already gone before the alarm sounds."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+4</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+3</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Linwood</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Lit Speed</span></div>
+                    <p class="card-ability">Strike Dodge</p>
+                    <ul class="card-text">
+                        <li>Attacks before any enemy unit this turn.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"First strike, no second chances needed."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+4</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+3</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Sydney</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Space Speed</span></div>
+                    <p class="card-ability">Strike First</p>
+                    <ul class="card-text">
+                        <li>Attacks before any enemy unit this turn.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"Speed is the only armor she trusts."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+4</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+3</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">CrayCray</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Lit Speed</span></div>
+                    <p class="card-ability">Strike Dodge</p>
+                    <ul class="card-text">
+                        <li>Attacks before any enemy unit this turn.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"Reckless is just another word for fast."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+4</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+3</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Bowler</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Fortified Tank</span></div>
+                    <p class="card-ability">Mega Armor</p>
+                    <ul class="card-text">
+                        <li>Reduces all damage by 1.</li>
+                        <li class="card-text-placeholder">Deals double melee damage.</li>
+                    </ul>
+                    <p class="card-flavor">"Nothing gets through if nothing gets past."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+2</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+8</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Myriad</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Lording Tank</span></div>
+                    <p class="card-ability">Regen Armor</p>
+                    <ul class="card-text">
+                        <li>Reduces all damage by 1.</li>
+                        <li class="card-text-placeholder">Deals double melee damage.</li>
+                    </ul>
+                    <p class="card-flavor">"A wall with legs."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+2</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+8</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Fortinbras</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Fortified Tank</span></div>
+                    <p class="card-ability">MegaArmor</p>
+                    <ul class="card-text">
+                        <li>Reduces all damage by 1.</li>
+                        <li class="card-text-placeholder">Deals double melee damage.</li>
+                    </ul>
+                    <p class="card-flavor">"Holds the line until there's no line left."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+2</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+8</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Gigatear</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Lording Tank</span></div>
+                    <p class="card-ability">Regen Armor</p>
+                    <ul class="card-text">
+                        <li>Reduces all damage by 1.</li>
+                        <li class="card-text-placeholder">Deals double melee damage.</li>
+                    </ul>
+                    <p class="card-flavor">"Built to take the hit and keep going!"</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+4</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+6</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Olaf</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Arsenal</span></div>
+                    <p class="card-ability">Multi-Fire</p>
+                    <ul class="card-text">
+                        <li>Attacks all enemy units this turn.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"One target was never enough."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+5</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Lasereater</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Arsenal</span></div>
+                    <p class="card-ability">Multi-Fire</p>
+                    <ul class="card-text">
+                        <li>Attacks all enemy units this turn.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"Every barrel finds a home."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+5</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Cidermajor</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Arsenal</span></div>
+                    <p class="card-ability">Multi-Fire</p>
+                    <ul class="card-text">
+                        <li>Attacks all enemy units this turn.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"Fires until the field goes quiet."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+5</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Peakseek</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Arsenal</span></div>
+                    <p class="card-ability">Multi-Fire</p>
+                    <ul class="card-text">
+                        <li>Attacks all enemy units this turn.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"Locks on to everything at once."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+5</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Leadfoot</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Stable</span></div>
+                    <p class="card-ability">Steady</p>
+                    <ul class="card-text">
+                        <li>Cannot be moved by enemy effects.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"Immovable, by design."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+6</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Cassidy</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Stable</span></div>
+                    <p class="card-ability">Steady</p>
+                    <ul class="card-text">
+                        <li>Cannot be moved by enemy effects.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"Roots deeper than the battlefield."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+6</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Ciderheart</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Stable</span></div>
+                    <p class="card-ability">Steady</p>
+                    <ul class="card-text">
+                        <li>Cannot be moved by enemy effects.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"Nothing knocks her off her mark."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+6</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Rocksonic</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Stable</span></div>
+                    <p class="card-ability">Steady</p>
+                    <ul class="card-text">
+                        <li>Cannot be moved by enemy effects.</li>
+                        <li class="card-text-placeholder">Second effect TBD</li>
+                    </ul>
+                    <p class="card-flavor">"Stands where others fall."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+6</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Ciderlord</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Elemental</span></div>
+                    <p class="card-ability">Infused</p>
+                    <ul class="card-text">
+                        <li>Deals bonus elemental damage on hit.</li>
+                        <li class="card-text-placeholder">Deals double melee damage.</li>
+                    </ul>
+                    <p class="card-flavor">"The enemy can't win."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+5</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Coldshoulder</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Elemental</span></div>
+                    <p class="card-ability">Infused</p>
+                    <ul class="card-text">
+                        <li>Deals bonus elemental damage on hit.</li>
+                        <li class="card-text-placeholder">Deals double melee damage.</li>
+                    </ul>
+                    <p class="card-flavor">"Frost follows wherever she steps."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+5</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">Shockmeterion</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Elemental</span></div>
+                    <p class="card-ability">Infused + DM</p>
+                    <ul class="card-text">
+                        <li>Deals bonus elemental damage on hit.</li>
+                        <li class="card-text-placeholder">Deals double melee damage.</li>
+                    </ul>
+                    <p class="card-flavor">"Strikes twice with volts and force."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+5</strong></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header"><h2 class="card-name">CrusherX</h2><span class="card-cost"></span><span class="card-cost"></span></div>
+                <div class="card-graphic"><span>Art</span></div>
+                <div class="card-body">
+                    <div class="card-meta"><span class="card-role">Elemental</span></div>
+                    <p class="card-ability">Infused</p>
+                    <ul class="card-text">
+                        <li>Deals bonus elemental damage on hit.</li>
+                        <li class="card-text-placeholder">Deals double melee damage.</li>
+                    </ul>
+                    <p class="card-flavor">"Element and impact, fused into one."</p>
+                </div>
+                <div class="card-footer">
+                    <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
+                    <div class="card-stat"><span class="card-stat-label">HP</span><strong>+5</strong></div>
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
+<script src="js/script.js"></script>
 </body>
 
 </html>
