@@ -12,6 +12,8 @@
   --base-bg: #4369a3;
   --hero-bg: #4369a3;
   --mech-bg: #802440;
+  --dm-bg: #3d2c31;
+  --wc-bg: #610bd1;
   --spacing-sm: 12px;
   --spacing-md: 14px;
   --radius-md: 14px;
@@ -100,12 +102,19 @@ body {
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  display: grid;
-  place-items: center;
+  position: relative;
   background: var(--card-border);
   color: white;
   font-size: 0.95rem;
   font-weight: 800;
+}
+
+.card-cost i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
 }
 
 .card-graphic {
@@ -177,9 +186,9 @@ body {
   margin-top: 2px;
 }
 
-.card-text-placeholder {
+.card-text-secondary {
+  display: none;
   color: var(--muted-text);
-  /* font-style: italic; */
 }
 
 .card-ability {
@@ -207,6 +216,16 @@ body {
 .mech-cards {
   --hero-bg: var(--mech-bg);
   --base-bg: var(--mech-bg);
+}
+
+.dm-cards {
+  --hero-bg: var(--dm-bg);
+  --base-bg: var(--dm-bg);
+}
+
+.wc-cards {
+  --hero-bg: var(--wc-bg);
+  --base-bg: var(--wc-bg);
 }
 
 .card-footer {
