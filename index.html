@@ -579,9 +579,9 @@
                         <div class="card-meta"><span class="card-role">Gain</span></div>
                         <p class="card-ability">+2 AP (Flat)</p>
                         <ul class="card-text">
-                            <li>Add +2 AP permanently to this card's base stats.</li>
+                            <li>Add +2 AP permanently to the corrupted unit's stats.</li>
                             <li class="card-text-secondary">This bonus cannot be removed, reduced, or copied by any other card's ability.</li>
-                            <li class="card-text-secondary">If this card is destroyed, the corruption is lost. It does not transfer to a new card.</li>
+                            <li class="card-text-secondary">If the corrupted unit is destroyed, the corruption is lost. It does not transfer to a new card.</li>
                         </ul>
                         <p class="card-flavor">"Power borrowed from the void eats away at you."</p>
                     </div>
@@ -594,9 +594,9 @@
                         <div class="card-meta"><span class="card-role">Gain</span></div>
                         <p class="card-ability">+1</p>
                         <ul class="card-text">
-                            <li>All numeric values in this card's ability increase by 1.</li>
+                            <li>All numeric values in the corrupted unit's ability increase by 1.</li>
                             <li class="card-text-secondary">Applies to flat numbers and durations alike (e.g. "next 2 turns" becomes "next 3 turns").</li>
-                            <li class="card-text-secondary">Does not affect this card's printed AP/HP stats, only its ability text.</li>
+                            <li class="card-text-secondary">Does not affect the corrupted unit's printed AP/HP stats, only its ability text.</li>
                         </ul>
                         <p class="card-flavor">"Did it just move?"</p>
                     </div>
@@ -608,9 +608,9 @@
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Penalty</span></div>
                         <ul class="card-text">
-                            <li>This card's max HP is permanently reduced by 2.</li>
+                            <li>The corrupted unit's max HP is permanently reduced by 2.</li>
                             <li class="card-text-secondary">Applied immediately, even mid-game - current HP drops right away, not just the max.</li>
-                            <li class="card-text-secondary">If this would drop the card to 0 HP or below, it survives at 1 HP instead, but is not destroyed.</li>
+                            <li class="card-text-secondary">If this would drop the unit to 0 HP or below, it survives at 1 HP instead, but is not destroyed.</li>
                         </ul>
                         <p class="card-flavor">"Lets all wait for the end."</p>
                     </div>
@@ -623,7 +623,7 @@
                         <div class="card-meta"><span class="card-role">Penalty</span></div>
                         <ul class="card-text">
                             <li>If destroyed, removed from the game entirely. Revival effects can't target it.</li>
-                            <li class="card-text-secondary">This applies even if the card's own ability (e.g. Rally) would otherwise save it.</li>
+                            <li class="card-text-secondary">This applies even if the unit's own ability (e.g. Rally) would otherwise save it.</li>
                             <li class="card-text-secondary">The empty roster slot it leaves behind cannot be refilled for the rest of the game.</li>
                         </ul>
                         <p class="card-flavor">"This is the finale. No turning back!"</p>
@@ -650,7 +650,7 @@
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Penalty</span></div>
                         <ul class="card-text">
-                            <li>Once per game, its controller must redirect this unit's next attack to a target of your choosing.</li>
+                            <li>Once per game, you must redirect this unit's next attack to a target you choose.</li>
                             <li class="card-text-secondary">The redirected attack can target an ally, including this unit's own paired Character or Mech.</li>
                             <li class="card-text-secondary">Does not trigger if the unit is already being forced to act by another effect this turn.</li>
                         </ul>
@@ -906,7 +906,7 @@
 
                 <div class="rules-section">1.2 The Pairing Hook</div>
                 <p class="rules-text">Any Character can pair with any Mech and grants its stat bonus + ability. If the Character's Bond Trait matches the Mech, that's a MATCH. MATCH bonus: +1 AP and +1 HP for the pairing.</p>
-                <p class="rules-text">Roster size: each player brings 1 Main character, 4 Sub Heroes, and 5 Mechs, pairing Characters to Mechs for combat. A Mech may carry 1 Main Pilot + 1 optional Co-Pilot, stacking both bonuses onto one unit (fewer, tougher pairings vs.
+                <p class="rules-text">Roster size: each player brings 1 Main character, 4 Sub Heroes, and 5 Mechs, pairing Characters to Mechs for combat. A Mech may carry 1 Base Pilot + 1 optional Co-Pilot, stacking both bonuses onto one unit (fewer, tougher pairings vs.
                     more spread-out bodies on the board). Sub Heroes carry smaller stat bonuses and utility-focused abilities.</p>
 
                 <div class="rules-section">1.3 Draft Setup (open draft, not blind draw)</div>
@@ -964,12 +964,12 @@
                 </table>
 
                 <div class="rules-section">1.5 Combat Resolution</div>
-                <p class="rules-text">Paired Mech + Character stats add together into ONE total AP/HP per unit (Mech base + Pilot bonus + optional Co-Pilot bonus). Attacker deals damage equal to total AP to the target's total HP.</p>
+                <p class="rules-text">Paired Mech + Character stats add together into ONE total AP/HP per unit (Mech base + Base Pilot bonus + optional Co-Pilot bonus). Attacker deals damage equal to total AP to the target's total HP.</p>
                 <p class="rules-text">Retaliation: unless the attack destroys the target first, the defender deals its full AP back to the attacker, simultaneously. Strike First units bypass retaliation if their attack destroys the target outright. A unit destroyed at 0 HP
                     is removed along with its full pairing.</p>
 
                 <div class="rules-section">1.6 Ejection</div>
-                <p class="rules-text">When a Mech hits 0 HP, its Main Pilot ejects to reserve instead of being removed with it. Later, using Transport, an ejected pilot may re-board a surviving allied Mech as Co-Pilot. Co-Pilots do not eject when their Mech is destroyed.
+                <p class="rules-text">When a Mech hits 0 HP, its Base Pilot ejects to reserve instead of being removed with it. Later, using Transport, an ejected pilot may re-board a surviving allied Mech as Co-Pilot. Co-Pilots do not eject when their Mech is destroyed.
                     No Redemption pilots cannot eject.</p>
 
                 <div class="rules-section">1.7 Win Condition</div>
@@ -1058,8 +1058,8 @@
                     </tr>
                 </table>
 
-                <div class="rules-section">2.3 Main Pilots, Sub Heroes & the Co-Pilot Slot</div>
-                <p class="rules-text">MAIN PILOTS carry the full class stat bonus and signature class ability. SUB HEROES: smaller stat bonus, utility-focused abilities. CO-PILOT SLOT: a Mech may carry 1 Main Pilot + 1 optional Co-Pilot, stacking both bonuses onto one unit
+                <div class="rules-section">2.3 Character Tiers & the Base/Co-Pilot Slot</div>
+                <p class="rules-text">MAIN-TIER CHARACTERS carry the full class stat bonus and signature class ability. SUB HEROES: smaller stat bonus, utility-focused abilities. CO-PILOT SLOT: a Mech may carry 1 Base Pilot + 1 optional Co-Pilot, stacking both bonuses onto one unit
                     (fewer, tougher pairings vs. more spread-out bodies on the board).</p>
                 <table>
                     <tr>
@@ -1680,7 +1680,7 @@
 
                 <div class="v2-subheading">Deferred Rules: Part 4, Co-Op Mode: Boss Assault</div>
                 <div class="rules-section">4.1 How It Works</div>
-                <p class="rules-text">2-4 players team up against a shared Monster. No draft, no deckbuilding - pick a pre-built Squad and a Monster, then play. The Monster runs entirely on a 6-card flip Action Deck (8 for Gris).</p>
+                <p class="rules-text">2 players team up against a shared Monster. No draft, no deckbuilding - pick a pre-built Squad and a Monster, then play. The Monster runs entirely on a 6-card flip Action Deck (8 for Gris).</p>
                 <table>
                     <tr>
                         <th>Element</th>
@@ -1688,7 +1688,7 @@
                     </tr>
                     <tr>
                         <td>Players</td>
-                        <td>2-4, each picks a different pre-built Squad (no assembly).</td>
+                        <td>2, each picks a different pre-built Squad (no assembly).</td>
                     </tr>
                     <tr>
                         <td>Monster</td>
@@ -1984,7 +1984,7 @@
                         <div class="card-body">
                             <div class="card-meta"><span class="card-role">Space Almighty</span></div>
                             <ul class="card-text">
-                                <li>Endless. Outlasts every strategy, every phase, every player.</li>
+                                <li>Endless darkness.</li>
                                 <li class="card-text-secondary">Link with the Gris Action Cards.</li>
                             </ul>
                         </div>
@@ -2434,5 +2434,4 @@
     </main>
     <script src="js/script.js"></script>
 </body>
-
 </html>
