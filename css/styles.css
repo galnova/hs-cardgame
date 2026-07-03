@@ -15,6 +15,7 @@
   --dm-bg: #3d2c31;
   --wc-bg: #610bd1;
   --mon-bg: #d14b0d;
+  --arena-bg: #0d7377;
   --spacing-sm: 12px;
   --spacing-md: 14px;
   --radius-md: 14px;
@@ -164,6 +165,7 @@ body {
 
 .card-text {
   margin: 0;
+  margin-left: 0.3em;
   padding-left: 1.1em;
   font-size: 0.64rem;
   line-height: 1.3;
@@ -254,6 +256,11 @@ body {
 
 .mon-cards .card-text li + li {
   margin-top: 1px;
+}
+
+.arena-cards {
+  --hero-bg: var(--arena-bg);
+  --base-bg: var(--arena-bg);
 }
 
 .card-footer {
@@ -351,7 +358,7 @@ body {
   margin: 22px 0 8px 0;
 }
 
-.rules-content p {
+.rules-text {
   margin: 0 0 12px 0;
 }
 
@@ -384,4 +391,28 @@ body {
   color: var(--muted-text);
   font-style: italic;
   margin: -6px 0 16px 0;
+}
+
+.v2-intro {
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+  padding: 14px 18px;
+  background: #f4f4ef;
+  border-left: 4px solid var(--card-border);
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.v2-subheading {
+  max-width: 1400px;
+  margin: 34px auto 6px auto;
+  padding: 0 4px 6px 4px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--card-border);
+  border-bottom: 2px solid var(--card-border);
+}
+
+.v2-subheading:first-of-type {
+  margin-top: 4px;
 }
