@@ -16,6 +16,14 @@
   --wc-bg: #610bd1;
   --mon-bg: #d14b0d;
   --arena-bg: #0d7377;
+  --bond-fast: #d9a400;
+  --bond-tank: #2f8f46;
+  --bond-arsenal: #c0392b;
+  --bond-stable: #5c6b73;
+  --bond-elemental: #2596be;
+  --gain-color: #2f8f46;
+  --penalty-color: #c0392b;
+  --disrupt-color: #6b165d;
   --spacing-sm: 12px;
   --spacing-md: 14px;
   --radius-md: 14px;
@@ -151,6 +159,13 @@ body {
   color: var(--muted-text);
 }
 
+.card-dm-pair {
+  font-size: 0.66rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--muted-text);
+}
+
 .card-role {
   display: inline-flex;
   align-items: center;
@@ -161,6 +176,24 @@ body {
   letter-spacing: 0.06em;
   font-size: 0.72rem;
   font-weight: 700;
+}
+
+.card-role.gain {
+  background: var(--gain-color);
+  border-color: var(--gain-color);
+  color: white;
+}
+
+.card-role.penalty {
+  background: var(--penalty-color);
+  border-color: var(--penalty-color);
+  color: white;
+}
+
+.card-role.disrupt {
+  background: var(--disrupt-color);
+  border-color: var(--disrupt-color);
+  color: white;
 }
 
 .card-text {
@@ -200,6 +233,42 @@ body {
 .card-tier.sub {
   background: #bf9bdf;
   color: var(--muted-text);
+}
+
+.card-bond {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.62rem;
+}
+
+.card-cost.bond-fast,
+.card-bond.bond-fast {
+  background: var(--bond-fast);
+}
+
+.card-cost.bond-tank,
+.card-bond.bond-tank {
+  background: var(--bond-tank);
+}
+
+.card-cost.bond-arsenal,
+.card-bond.bond-arsenal {
+  background: var(--bond-arsenal);
+}
+
+.card-cost.bond-stable,
+.card-bond.bond-stable {
+  background: var(--bond-stable);
+}
+
+.card-cost.bond-elemental,
+.card-bond.bond-elemental {
+  background: var(--bond-elemental);
 }
 
 .card-ability {

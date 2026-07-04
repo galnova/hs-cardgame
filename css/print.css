@@ -1,0 +1,91 @@
+@media print {
+  @page {
+    size: letter portrait;
+    margin: 0.4in;
+  }
+
+  body {
+    background: white;
+  }
+
+  h1,
+  .accordion,
+  .panel > h2,
+  .rules-content,
+  .v2-subheading {
+    display: none !important;
+  }
+
+  .panel {
+    max-height: none !important;
+    overflow: visible !important;
+    margin-bottom: 0;
+    background: none;
+  }
+
+  /* Collapse every set's accent color to black - keeps printing to the black cartridge only */
+  :root {
+    --hero-bg: #000000;
+    --base-bg: #000000;
+    --mech-bg: #000000;
+    --dm-bg: #000000;
+    --wc-bg: #000000;
+    --mon-bg: #000000;
+    --arena-bg: #000000;
+    --bond-fast: #000000;
+    --bond-tank: #000000;
+    --bond-arsenal: #000000;
+    --bond-stable: #000000;
+    --bond-elemental: #000000;
+    --gain-color: #000000;
+    --penalty-color: #000000;
+    --disrupt-color: #000000;
+    --card-bg: #ffffff;
+    --muted-text: #000000;
+  }
+
+  .card-graphic {
+    background: white !important;
+    color: black !important;
+  }
+
+  .card-tier.main,
+  .card-tier.sub {
+    background: white !important;
+    color: black !important;
+    border: 1.5px solid black !important;
+  }
+
+  .card-role,
+  .card-bond {
+    border-color: black !important;
+  }
+
+  .card-text,
+  .card-text-secondary,
+  .card-flavor {
+    color: black !important;
+  }
+
+  /* Four cards per page: fixed 2-column grid, sized so 2 rows fill the page */
+  .card-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.2in !important;
+    max-width: none !important;
+  }
+
+  .card {
+    max-width: none !important;
+    width: 100% !important;
+    height: 4.85in !important;
+    aspect-ratio: auto !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .card:nth-child(4n) {
+    page-break-after: always;
+    break-after: page;
+  }
+}

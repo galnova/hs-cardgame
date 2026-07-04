@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Card Anatomy Sample</title>
+    <title>Hue Shift Card Game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
 </head>
 
 <body>
@@ -21,11 +22,11 @@
                         <h2 class="card-name">Sadie</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-fist-raised"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Brave Hero</span></div>
+                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Brave Hero</span><span class="card-bond bond-tank" title="Bonds with Tank"><i class="fas fa-shield-alt"></i></span></div>
                         <p class="card-ability">Rally</p>
                         <ul class="card-text">
                             <li>Survives with 1 HP instead of destruction.</li>
-                            <li class="card-text-secondary">Gains +1 AP for the rest of the game. (1st time Rally triggers).</li>
+                            <li class="card-text-secondary">Gains +1 AP for the rest of the game. (first time Rally triggers).</li>
                         </ul>
                         <p class="card-flavor">"All guts, all glory!!!"</p>
                     </div>
@@ -39,7 +40,7 @@
                         <h2 class="card-name">Zo</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-fist-raised"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Brave Hero</span></div>
+                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Brave Hero</span><span class="card-bond bond-stable" title="Bonds with Stable"><i class="fas fa-anchor"></i></span></div>
                         <p class="card-ability">Steady Hand</p>
                         <ul class="card-text">
                             <li>Survives with 1 HP instead of destruction.</li>
@@ -48,8 +49,8 @@
                         <p class="card-flavor">"Leans in when everyone else backs down."</p>
                     </div>
                     <div class="card-footer">
-                        <div class="card-stat"><span class="card-stat-label">AP</span><strong>+1</strong></div>
-                        <div class="card-stat"><span class="card-stat-label">HP</span><strong>+2</strong></div>
+                        <div class="card-stat"><span class="card-stat-label">AP</span><strong>+0</strong></div>
+                        <div class="card-stat"><span class="card-stat-label">HP</span><strong>+1</strong></div>
                     </div>
                 </div>
                 <div class="card">
@@ -57,7 +58,7 @@
                         <h2 class="card-name">Fir</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-fist-raised"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Fearful Hero</span></div>
+                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Fearful Hero</span><span class="card-bond bond-fast" title="Bonds with Fast"><i class="fas fa-bolt"></i></span></div>
                         <p class="card-ability">Rally</p>
                         <ul class="card-text">
                             <li>Prevent 1 damage once per game.</li>
@@ -75,7 +76,7 @@
                         <h2 class="card-name">Llewellyn</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-crown"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Fearless Leader</span></div>
+                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Fearless Leader</span><span class="card-bond bond-arsenal" title="Bonds with Arsenal"><i class="fas fa-bomb"></i></span></div>
                         <p class="card-ability">Experience</p>
                         <ul class="card-text">
                             <li>+1 AP when destroying units.</li>
@@ -93,7 +94,7 @@
                         <h2 class="card-name">Cagney</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-crown"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Fearless Leader</span></div>
+                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Fearless Leader</span><span class="card-bond bond-elemental" title="Bonds with Elemental"><i class="fas fa-atom"></i></span></div>
                         <p class="card-ability">Quick Study</p>
                         <ul class="card-text">
                             <li>Allied unit gains +1 AP on first destruction.</li>
@@ -111,7 +112,7 @@
                         <h2 class="card-name">Bethany</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-crown"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Cutthroat Leader</span></div>
+                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Cutthroat Leader</span><span class="card-bond bond-fast" title="Bonds with Fast"><i class="fas fa-bolt"></i></span></div>
                         <p class="card-ability">Quick Study</p>
                         <ul class="card-text">
                             <li>Allied unit gains +1 AP on first destruction.</li>
@@ -129,11 +130,11 @@
                         <h2 class="card-name">Blac</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-hand-rock"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Corrupted Brute</span></div>
-                        <p class="card-ability">Wild Card + DM</p>
+                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Corrupted Brute</span><span class="card-bond bond-elemental" title="Bonds with Elemental"><i class="fas fa-atom"></i></span></div>
+                        <p class="card-ability">Wildcard + DM</p>
                         <ul class="card-text">
                             <li>Flip coin: Heads +2 AP, Tails +2 HP.</li>
-                            <li class="card-text-secondary">Two Heads in a row lets him flip again for free.</li>
+                            <li class="card-text-secondary">Two Heads in a row lets her flip again for free.</li>
                             <li class="card-text-secondary">Three Heads straight permanently locks in Heads.</li>
                         </ul>
                         <p class="card-flavor">"Fortune favors the reckless."</p>
@@ -148,11 +149,10 @@
                         <h2 class="card-name">Let</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-hand-rock"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Manic Brute</span></div>
+                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Manic Brute</span><span class="card-bond bond-fast" title="Bonds with Fast"><i class="fas fa-bolt"></i></span></div>
                         <p class="card-ability">Even Odds</p>
                         <ul class="card-text">
                             <li>At the start of combat, flip a coin: Heads = enemy -1 AP this fight, Tails = this unit +1 HP this fight.</li>
-                            <!-- <li class="card-text-secondary">Once per game, apply both the Heads and Tails effect on the same flip.</li> -->
                         </ul>
                         <p class="card-flavor">"Heads you win, tails you also win."</p>
                     </div>
@@ -166,7 +166,7 @@
                         <h2 class="card-name">Emily</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-hand-rock"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Corrupted Brute</span></div>
+                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Corrupted Brute</span><span class="card-bond bond-stable" title="Bonds with Stable"><i class="fas fa-anchor"></i></span></div>
                         <p class="card-ability">Coin Toss</p>
                         <ul class="card-text">
                             <li>Flip coin: Heads +1 AP, Tails +1 HP.</li>
@@ -184,12 +184,12 @@
                         <h2 class="card-name">Starlot</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-crosshairs"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Heavy Gunner</span></div>
+                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Heavy Gunner</span><span class="card-bond bond-tank" title="Bonds with Tank"><i class="fas fa-shield-alt"></i></span></div>
                         <p class="card-ability">Focus Fire + DM</p>
                         <ul class="card-text">
                             <li>Ignore Tank damage reduction.</li>
-                            <li class="card-text-secondary">Focus Fire also ignores Stables status immunity once.</li>
-                            <li class="card-text-secondary">First use permanently ignores Stables immunity.</li>
+                            <li class="card-text-secondary">Focus Fire also ignores Stable status immunity once.</li>
+                            <li class="card-text-secondary">First use permanently ignores Stable immunity.</li>
                         </ul>
                         <p class="card-flavor">"Defenses fall to a well-aimed shot."</p>
                     </div>
@@ -203,7 +203,7 @@
                         <h2 class="card-name">Sevura</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-crosshairs"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Precise Gunner</span></div>
+                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Precise Gunner</span><span class="card-bond bond-arsenal" title="Bonds with Arsenal"><i class="fas fa-bomb"></i></span></div>
                         <p class="card-ability">Focus Fire</p>
                         <ul class="card-text">
                             <li>Ignore Tank damage reduction.</li>
@@ -212,7 +212,7 @@
                         <p class="card-flavor">"A good offense..."</p>
                     </div>
                     <div class="card-footer">
-                        <div class="card-stat"><span class="card-stat-label">AP</span><strong>+2</strong></div>
+                        <div class="card-stat"><span class="card-stat-label">AP</span><strong>+1</strong></div>
                         <div class="card-stat"><span class="card-stat-label">HP</span><strong>+0</strong></div>
                     </div>
                 </div>
@@ -221,11 +221,11 @@
                         <h2 class="card-name">D</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-crosshairs"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Heavy Gunner</span></div>
+                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Heavy Gunner</span><span class="card-bond bond-fast" title="Bonds with Fast"><i class="fas fa-bolt"></i></span></div>
                         <p class="card-ability">Steady Aim</p>
                         <ul class="card-text">
                             <li>Ignore 1 point of damage reduction.</li>
-                            <li class="card-text-secondary">His damage-reduction ignore also applies to Shield effects.</li>
+                            <li class="card-text-secondary">Her damage-reduction ignore also applies to Shield effects.</li>
                         </ul>
                         <p class="card-flavor">"I only need one shot."</p>
                     </div>
@@ -239,7 +239,7 @@
                         <h2 class="card-name">Rufus</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-cut"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Vengeful Sworder</span></div>
+                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Vengeful Sworder</span><span class="card-bond bond-elemental" title="Bonds with Elemental"><i class="fas fa-atom"></i></span></div>
                         <p class="card-ability">Leak</p>
                         <ul class="card-text">
                             <li>Target loses 1 HP next turn.</li>
@@ -257,7 +257,7 @@
                         <h2 class="card-name">Cecilia</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-cut"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier main"><i class="fas fa-star"></i> Main</span><span class="card-role">Mournful Sworder</span></div>
+                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Mournful Sworder</span><span class="card-bond bond-fast" title="Bonds with Fast"><i class="fas fa-bolt"></i></span></div>
                         <p class="card-ability">Leak</p>
                         <ul class="card-text">
                             <li>Target loses 1 HP next turn.</li>
@@ -266,7 +266,7 @@
                         <p class="card-flavor">"Pierce the skin with metal."</p>
                     </div>
                     <div class="card-footer">
-                        <div class="card-stat"><span class="card-stat-label">AP</span><strong>+1</strong></div>
+                        <div class="card-stat"><span class="card-stat-label">AP</span><strong>+0</strong></div>
                         <div class="card-stat"><span class="card-stat-label">HP</span><strong>+1</strong></div>
                     </div>
                 </div>
@@ -275,7 +275,7 @@
                         <h2 class="card-name">Jackie</h2><span class="card-cost"><i class="fas fa-user"></i></span><span class="card-cost"><i class="fas fa-cut"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Vengeful Sworder</span></div>
+                        <div class="card-meta"><span class="card-tier sub">Sub</span><span class="card-role">Vengeful Sworder</span><span class="card-bond bond-arsenal" title="Bonds with Arsenal"><i class="fas fa-bomb"></i></span></div>
                         <p class="card-ability">Gusher</p>
                         <ul class="card-text">
                             <li>When attacking, target loses 1 additional HP.</li>
@@ -296,7 +296,7 @@
             <div class="card-wrap mech-cards">
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Cidermayer</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">Cidermayer</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-fast"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Space Speed</span></div>
@@ -315,7 +315,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Linwood</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">Linwood</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-fast"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Lit Speed</span></div>
@@ -333,7 +333,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Sydney</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">Sydney</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-fast"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Space Speed</span></div>
@@ -351,7 +351,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Bowler</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-shield-alt"></i></span></div>
+                        <h2 class="card-name">Bowler</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-tank"><i class="fas fa-shield-alt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Fortified Tank</span></div>
@@ -369,7 +369,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Myriad</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-shield-alt"></i></span></div>
+                        <h2 class="card-name">Myriad</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-tank"><i class="fas fa-shield-alt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Lording Tank</span></div>
@@ -387,7 +387,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Gigatear</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-shield-alt"></i></span></div>
+                        <h2 class="card-name">Gigatear</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-tank"><i class="fas fa-shield-alt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Lording Tank</span></div>
@@ -405,7 +405,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Olaf</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-bomb"></i></span></div>
+                        <h2 class="card-name">Olaf</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-arsenal"><i class="fas fa-bomb"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Arsenal</span></div>
@@ -423,7 +423,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Lasereater</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-bomb"></i></span></div>
+                        <h2 class="card-name">Lasereater</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-arsenal"><i class="fas fa-bomb"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Arsenal</span></div>
@@ -441,7 +441,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Cidermajor</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-bomb"></i></span></div>
+                        <h2 class="card-name">Cidermajor</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-arsenal"><i class="fas fa-bomb"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Arsenal</span></div>
@@ -459,7 +459,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Leadfoot</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-anchor"></i></span></div>
+                        <h2 class="card-name">Leadfoot</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-stable"><i class="fas fa-anchor"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Stable</span></div>
@@ -477,7 +477,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Cassidy</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-anchor"></i></span></div>
+                        <h2 class="card-name">Cassidy</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-stable"><i class="fas fa-anchor"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Stable</span></div>
@@ -495,7 +495,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Ciderheart</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-anchor"></i></span></div>
+                        <h2 class="card-name">Ciderheart</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-stable"><i class="fas fa-anchor"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Stable</span></div>
@@ -513,11 +513,11 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Ciderlord</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-atom"></i></span></div>
+                        <h2 class="card-name">Ciderlord</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-elemental"><i class="fas fa-atom"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Elemental</span></div>
-                        <p class="card-ability">Infused</p>
+                        <p class="card-ability">Flame Infused</p>
                         <ul class="card-text">
                             <li>Deals bonus elemental damage on hit.</li>
                             <li class="card-text-secondary">Burn damage increases by 1 against Tank targets.</li>
@@ -531,14 +531,14 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Coldshoulder</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-atom"></i></span></div>
+                        <h2 class="card-name">Coldshoulder</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-elemental"><i class="fas fa-atom"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Elemental</span></div>
-                        <p class="card-ability">Infused</p>
+                        <p class="card-ability">Frost Infused</p>
                         <ul class="card-text">
                             <li>Deals bonus elemental damage on hit.</li>
-                            <li class="card-text-secondary">Freeze also zeroes the targets HP regen that turn.</li>
+                            <li class="card-text-secondary">Freeze also zeroes the target's HP regen that turn.</li>
                         </ul>
                         <p class="card-flavor">"Frosted steps behind, pain ahead."</p>
                     </div>
@@ -549,16 +549,16 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Derrick</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost"><i class="fas fa-atom"></i></span></div>
+                        <h2 class="card-name">Derrick</h2><span class="card-cost"><i class="fas fa-robot"></i></span><span class="card-cost bond-elemental"><i class="fas fa-atom"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Elemental</span></div>
-                        <p class="card-ability">Infused + DM</p>
+                        <p class="card-ability">Shock Infused + DM</p>
                         <ul class="card-text">
                             <li>Deals bonus elemental damage on hit.</li>
                             <li class="card-text-secondary">Corrode stacks instead of refreshing, up to a maximum of 3 stacks (-3 AP).</li>
                         </ul>
-                        <p class="card-flavor">"Strikes doubly hard with lighting and force!"</p>
+                        <p class="card-flavor">"Strikes doubly hard with lightning and force!"</p>
                     </div>
                     <div class="card-footer">
                         <div class="card-stat"><span class="card-stat-label">AP</span><strong>+3</strong></div>
@@ -576,7 +576,7 @@
                         <h2 class="card-name">Dark Energy</h2><span class="card-cost"><i class="fas fa-meteor"></i></span><span class="card-cost"><i class="fas fa-arrow-up"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Gain</span></div>
+                        <div class="card-meta"><span class="card-role gain">Gain</span><span class="card-dm-pair">paired with 1 Penalty</span></div>
                         <p class="card-ability">+2 AP (Flat)</p>
                         <ul class="card-text">
                             <li>Add +2 AP permanently to the corrupted unit's stats.</li>
@@ -591,8 +591,8 @@
                         <h2 class="card-name">My Shadow</h2><span class="card-cost"><i class="fas fa-meteor"></i></span><span class="card-cost"><i class="fas fa-arrow-up"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Gain</span></div>
-                        <p class="card-ability">+1</p>
+                        <div class="card-meta"><span class="card-role gain">Gain</span><span class="card-dm-pair">paired with 1 Penalty</span></div>
+                        <p class="card-ability">Boost Ability +1</p>
                         <ul class="card-text">
                             <li>All numeric values in the corrupted unit's ability increase by 1.</li>
                             <li class="card-text-secondary">Applies to flat numbers and durations alike (e.g. "next 2 turns" becomes "next 3 turns").</li>
@@ -606,13 +606,14 @@
                         <h2 class="card-name">Fragile Core</h2><span class="card-cost"><i class="fas fa-meteor"></i></span><span class="card-cost"><i class="fas fa-arrow-down"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Penalty</span></div>
+                        <div class="card-meta"><span class="card-role penalty">Penalty</span><span class="card-dm-pair">paired with 1 Gain</span></div>
+                        <p class="card-ability">-2 HP (Flat)</p>
                         <ul class="card-text">
                             <li>The corrupted unit's max HP is permanently reduced by 2.</li>
                             <li class="card-text-secondary">Applied immediately, even mid-game - current HP drops right away, not just the max.</li>
                             <li class="card-text-secondary">If this would drop the unit to 0 HP or below, it survives at 1 HP instead, but is not destroyed.</li>
                         </ul>
-                        <p class="card-flavor">"Lets all wait for the end."</p>
+                        <p class="card-flavor">"Let's all wait for the end."</p>
                     </div>
                 </div>
                 <div class="card">
@@ -620,7 +621,8 @@
                         <h2 class="card-name">No Redemption</h2><span class="card-cost"><i class="fas fa-meteor"></i></span><span class="card-cost"><i class="fas fa-arrow-down"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Penalty</span></div>
+                        <div class="card-meta"><span class="card-role penalty">Penalty</span><span class="card-dm-pair">paired with 1 Gain</span></div>
+                        <p class="card-ability">No Revival</p>
                         <ul class="card-text">
                             <li>If destroyed, removed from the game entirely. Revival effects can't target it.</li>
                             <li class="card-text-secondary">This applies even if the unit's own ability (e.g. Rally) would otherwise save it.</li>
@@ -634,7 +636,8 @@
                         <h2 class="card-name">Isolated</h2><span class="card-cost"><i class="fas fa-meteor"></i></span><span class="card-cost"><i class="fas fa-arrow-down"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Penalty</span></div>
+                        <div class="card-meta"><span class="card-role penalty">Penalty</span><span class="card-dm-pair">paired with 1 Gain</span></div>
+                        <p class="card-ability">No Team Bonus</p>
                         <ul class="card-text">
                             <li>This unit can never benefit from another Character's Team Building effects.</li>
                             <li class="card-text-secondary">Also cannot be assigned as a Co-Pilot, nor carry one of its own.</li>
@@ -648,10 +651,11 @@
                         <h2 class="card-name">Possession</h2><span class="card-cost"><i class="fas fa-meteor"></i></span><span class="card-cost"><i class="fas fa-arrow-down"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Penalty</span></div>
+                        <div class="card-meta"><span class="card-role penalty">Penalty</span><span class="card-dm-pair">paired with 1 Gain</span></div>
+                        <p class="card-ability">Friendly Fire</p>
                         <ul class="card-text">
-                            <li>Once per game, you must redirect this unit's next attack to a target you choose.</li>
-                            <li class="card-text-secondary">The redirected attack can target an ally, including this unit's own paired Character or Mech.</li>
+                            <li>Once per game, redirect this unit's next attack to one of your own units instead.</li>
+                            <li class="card-text-secondary">This can include the unit's own paired Character or Mech, ally or not.</li>
                             <li class="card-text-secondary">Does not trigger if the unit is already being forced to act by another effect this turn.</li>
                         </ul>
                         <p class="card-flavor">"Is that my voice...in the distance?"</p>
@@ -665,10 +669,10 @@
             <div class="card-wrap wc-cards">
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">True Grit</h2><span class="card-cost"><i class="fas fa-dice"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">True Grit</h2><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Gain</span></div>
+                        <div class="card-meta"><span class="card-role gain">Gain</span></div>
                         <ul class="card-text">
                             <li>This unit deals double damage on its next attack.</li>
                             <li class="card-text-secondary">Can be played as your Free Action on your own turn, before attacking.</li>
@@ -679,10 +683,10 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Fearless Heart</h2><span class="card-cost"><i class="fas fa-dice"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">Fearless Heart</h2><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Gain</span></div>
+                        <div class="card-meta"><span class="card-role gain">Gain</span></div>
                         <ul class="card-text">
                             <li>Nullify all damage from one attack. (One time only.)</li>
                             <li class="card-text-secondary">Play as an interrupt, after the attack is declared but before damage is dealt.</li>
@@ -693,10 +697,10 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Second Wind</h2><span class="card-cost"><i class="fas fa-dice"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">Second Wind</h2><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Gain</span></div>
+                        <div class="card-meta"><span class="card-role gain">Gain</span></div>
                         <ul class="card-text">
                             <li>One of your units recovers 3 HP.</li>
                             <li class="card-text-secondary">Cannot raise a unit above its printed max HP.</li>
@@ -707,10 +711,10 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Overclock</h2><span class="card-cost"><i class="fas fa-dice"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">Overclock</h2><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Gain</span></div>
+                        <div class="card-meta"><span class="card-role gain">Gain</span></div>
                         <ul class="card-text">
                             <li>One of your units gets +3 AP until end of turn.</li>
                             <li class="card-text-secondary">Stacks with other AP-boosting effects played the same turn.</li>
@@ -721,10 +725,10 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Shield Wall</h2><span class="card-cost"><i class="fas fa-dice"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">Shield Wall</h2><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Gain</span></div>
+                        <div class="card-meta"><span class="card-role gain">Gain</span></div>
                         <ul class="card-text">
                             <li>Reduce incoming damage from one attack by 2.</li>
                             <li class="card-text-secondary">Excess reduction beyond the attack's damage is simply wasted, not banked.</li>
@@ -735,24 +739,24 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Ambush</h2><span class="card-cost"><i class="fas fa-dice"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">Ambush</h2><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Disrupt</span></div>
+                        <div class="card-meta"><span class="card-role disrupt">Disrupt</span></div>
                         <ul class="card-text">
                             <li>Interrupt: attack an enemy unit out of turn order. (Once per game.)</li>
                             <li class="card-text-secondary">Does not use your Free Action for the turn - a separate, once-per-game effect.</li>
                             <li class="card-text-secondary">Can target a unit that has already acted this turn.</li>
                         </ul>
-                        <p class="card-flavor">"You wont see it coming."</p>
+                        <p class="card-flavor">"You won't see it coming."</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Sabotage</h2><span class="card-cost"><i class="fas fa-dice"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">Sabotage</h2><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Disrupt</span></div>
+                        <div class="card-meta"><span class="card-role disrupt">Disrupt</span></div>
                         <ul class="card-text">
                             <li>Target enemy unit gets -2 AP until end of turn.</li>
                             <li class="card-text-secondary">Play as an interrupt, before the target declares its attack.</li>
@@ -763,10 +767,10 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Last Stand</h2><span class="card-cost"><i class="fas fa-dice"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">Last Stand</h2><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Gain</span></div>
+                        <div class="card-meta"><span class="card-role gain">Gain</span></div>
                         <ul class="card-text">
                             <li>If this unit would be destroyed this turn, it still deals its damage before being removed.</li>
                             <li class="card-text-secondary">Works even if the unit hasn't acted yet - it can still make its attack after being marked for destruction.</li>
@@ -777,10 +781,10 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Second Chance</h2><span class="card-cost"><i class="fas fa-dice"></i></span><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
+                        <h2 class="card-name">Second Chance</h2><span class="card-cost"><i class="fas fa-bolt"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
-                        <div class="card-meta"><span class="card-role">Gain</span></div>
+                        <div class="card-meta"><span class="card-role gain">Gain</span></div>
                         <ul class="card-text">
                             <li>Return one destroyed unit from your trash to the field with 1 HP. (Once per game.)</li>
                             <li>Cannot target a No Redemption unit.</li>
@@ -796,7 +800,7 @@
             <div class="card-wrap arena-cards">
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Asteroid Clusters</h2><span class="card-cost"><i class="fas fa-globe"></i></span><span class="card-cost"><i class="fas fa-satellite"></i></span></div>
+                        <h2 class="card-name">Asteroid Clusters</h2><span class="card-cost"><i class="fas fa-globe"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Arena</span></div>
@@ -808,7 +812,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Darkest Nebula</h2><span class="card-cost"><i class="fas fa-globe"></i></span><span class="card-cost"><i class="fas fa-satellite"></i></span></div>
+                        <h2 class="card-name">Darkest Nebula</h2><span class="card-cost"><i class="fas fa-globe"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Arena</span></div>
@@ -820,7 +824,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Satellite Field</h2><span class="card-cost"><i class="fas fa-globe"></i></span><span class="card-cost"><i class="fas fa-satellite"></i></span></div>
+                        <h2 class="card-name">Satellite Field</h2><span class="card-cost"><i class="fas fa-globe"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Arena</span></div>
@@ -832,7 +836,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Ionic Storms</h2><span class="card-cost"><i class="fas fa-globe"></i></span><span class="card-cost"><i class="fas fa-satellite"></i></span></div>
+                        <h2 class="card-name">Ionic Storms</h2><span class="card-cost"><i class="fas fa-globe"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Arena</span></div>
@@ -844,7 +848,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Monster Graveyard</h2><span class="card-cost"><i class="fas fa-globe"></i></span><span class="card-cost"><i class="fas fa-satellite"></i></span></div>
+                        <h2 class="card-name">Monster Graveyard</h2><span class="card-cost"><i class="fas fa-globe"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Arena</span></div>
@@ -856,7 +860,7 @@
                 </div>
                 <div class="card">
                     <div class="card-header">
-                        <h2 class="card-name">Normal Space</h2><span class="card-cost"><i class="fas fa-globe"></i></span><span class="card-cost"><i class="fas fa-satellite"></i></span></div>
+                        <h2 class="card-name">Normal Space</h2><span class="card-cost"><i class="fas fa-globe"></i></span></div>
                     <div class="card-graphic"><span>Art</span></div>
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Arena</span></div>
@@ -1068,15 +1072,15 @@
                     </tr>
                     <tr>
                         <td>Steady Hand (Hero Sub)</td>
-                        <td>[RECONSTRUCTED] Once per game, prevent 1 damage to an allied unit.</td>
+                        <td>Once per game, prevent 1 damage to an allied unit.</td>
                     </tr>
                     <tr>
                         <td>Quick Study (Leader Sub)</td>
-                        <td>[RECONSTRUCTED] The first time an allied unit destroys an enemy, this unit gains +1 AP for the rest of the game.</td>
+                        <td>The first time an allied unit destroys an enemy, this unit gains +1 AP for the rest of the game.</td>
                     </tr>
                     <tr>
                         <td>Coin Toss (Brute Sub)</td>
-                        <td>[RECONSTRUCTED] Once per game, flip a coin: Heads = +1 AP this turn, Tails = +1 HP this turn.</td>
+                        <td>Once per game, flip a coin: Heads = +1 AP this turn, Tails = +1 HP this turn.</td>
                     </tr>
                     <tr>
                         <td>Steady Aim (Gunner Sub)</td>
@@ -1102,8 +1106,8 @@
                     </tr>
                     <tr>
                         <td>PENALTY (pick 1)</td>
-                        <td>Fragile Core (-2 HP max) / No Redemption (removed forever if destroyed, Rally/revival can't target it) / Isolated (no Team Building benefit) / Possession (once per game, its controller must redirect its next attack to a target
-                            of your choosing)</td>
+                        <td>Fragile Core (-2 HP max) / No Redemption (removed forever if destroyed, Rally/revival can't target it) / Isolated (no Team Building benefit) / Possession (once per game, redirect its next attack to one of your own
+                            units instead)</td>
                     </tr>
                     <tr>
                         <td>Display</td>
@@ -1199,6 +1203,7 @@
 
                 <div class="rules-section">3.1 Character Cards (15)</div>
                 <p class="rules-note">Bond shows which Mech class this Character Matches with.</p>
+                <p class="rules-note">Bond colors: Fast = gold, Tank = green, Arsenal = red, Stable = slate, Elemental = blue. Matching colored icons appear on both the Character's card and its Mech class icon.</p>
                 <table>
                     <tr>
                         <th>Name</th>
@@ -1223,11 +1228,11 @@
                     <tr>
                         <td>Zo</td>
                         <td>Hero</td>
-                        <td>Main</td>
+                        <td>Sub</td>
                         <td>Stable</td>
+                        <td>+0</td>
                         <td>+1</td>
-                        <td>+2</td>
-                        <td>Rally</td>
+                        <td>Steady Hand</td>
                         <td></td>
                     </tr>
                     <tr>
@@ -1253,7 +1258,7 @@
                     <tr>
                         <td>Cagney</td>
                         <td>Leader</td>
-                        <td>Main</td>
+                        <td>Sub</td>
                         <td>Elemental</td>
                         <td>+0</td>
                         <td>+1</td>
@@ -1277,13 +1282,13 @@
                         <td>Elemental</td>
                         <td>+2</td>
                         <td>+0</td>
-                        <td>Wild Card + DM</td>
+                        <td>Wildcard + DM</td>
                         <td>YES</td>
                     </tr>
                     <tr>
                         <td>Let</td>
                         <td>Brute</td>
-                        <td>Main</td>
+                        <td>Sub</td>
                         <td>Fast</td>
                         <td>0</td>
                         <td>0</td>
@@ -1313,9 +1318,9 @@
                     <tr>
                         <td>Sevura</td>
                         <td>Gunner</td>
-                        <td>Main</td>
+                        <td>Sub</td>
                         <td>Arsenal</td>
-                        <td>+2</td>
+                        <td>+1</td>
                         <td>+0</td>
                         <td>Focus Fire</td>
                         <td></td>
@@ -1343,9 +1348,9 @@
                     <tr>
                         <td>Cecilia</td>
                         <td>Sworder</td>
-                        <td>Main</td>
+                        <td>Sub</td>
                         <td>Fast</td>
-                        <td>+1</td>
+                        <td>+0</td>
                         <td>+1</td>
                         <td>Leak</td>
                         <td></td>
@@ -1502,15 +1507,15 @@
                     </tr>
                     <tr>
                         <td>Dark Energy [GAIN]</td>
-                        <td>Add +2 AP permanently to this card's base stats.</td>
+                        <td>Add +2 AP permanently to the corrupted unit's stats.</td>
                     </tr>
                     <tr>
                         <td>My Shadow [GAIN]</td>
-                        <td>All numeric values in this card's ability increase by 1.</td>
+                        <td>All numeric values in the corrupted unit's ability increase by 1.</td>
                     </tr>
                     <tr>
                         <td>Fragile Core [PENALTY]</td>
-                        <td>This card's max HP is permanently reduced by 2.</td>
+                        <td>The corrupted unit's max HP is permanently reduced by 2.</td>
                     </tr>
                     <tr>
                         <td>No Redemption [PENALTY]</td>
@@ -1522,7 +1527,7 @@
                     </tr>
                     <tr>
                         <td>Possession [PENALTY]</td>
-                        <td>Once per game, its controller must redirect this unit's next attack to a target of your choosing.</td>
+                        <td>Once per game, redirect this unit's next attack to one of your own units instead.</td>
                     </tr>
                 </table>
 
@@ -1732,7 +1737,7 @@
                             <p class="card-ability">Steady Hand</p>
                             <ul class="card-text">
                                 <li>Prevent 1 damage once per game.</li>
-                                <li class="card-text-secondary">Redirect 1 damage from an ally to himself instead. (Once)</li>
+                                <li class="card-text-secondary">Redirect 1 damage from an ally to herself instead. (Once)</li>
                             </ul>
                             <p class="card-flavor">"Take on ME!"</p>
                         </div>
@@ -1771,7 +1776,7 @@
                                 <li class="card-text-secondary">Tails also disrupts one enemy's next Action.</li>
                                 <li class="card-text-secondary">Three Heads straight permanently locks in Heads.</li>
                             </ul>
-                            <p class="card-flavor">"Where ya gonna run now?</p>
+                            <p class="card-flavor">"Where ya gonna run now?"</p>
                         </div>
                         <div class="card-footer">
                             <div class="card-stat"><span class="card-stat-label">AP</span><strong>+0</strong></div>
@@ -1969,7 +1974,7 @@
                             <div class="card-meta"><span class="card-role">Space Madness</span></div>
                             <ul class="card-text">
                                 <li>Chaotic, escalating. Even hurts itself.</li>
-                                <li class="card-text-secondary">Link with the The Unraveling Action Cards.</li>
+                                <li class="card-text-secondary">Link with The Unraveling Action Cards.</li>
                             </ul>
                         </div>
                         <div class="card-footer">
@@ -2279,7 +2284,7 @@
                                 <li>Players skip their next Act step.</li>
                             </ul>
                         
-                            <p class="card-flavor">"A brief repreive."</p>
+                            <p class="card-flavor">"A brief reprieve."</p>
                         </div>
                     </div>
                     <div class="card">
