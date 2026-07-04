@@ -6,13 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hue Shift Card Game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/print.css" media="print" />
 </head>
 
 <body>
     <main id="card-demo">
         <h1>HueShift Card Game</h1>
+        <button class="accordion">Quick Reference</button>
+        <div class="panel">
+            <h2>Quick Reference</h2>
+            <div class="rules-content">
+                <div class="rules-section">Turn Structure</div>
+                <table>
+                    <tr>
+                        <th>Step</th>
+                        <th>What Happens</th>
+                    </tr>
+                    <tr>
+                        <td>1. Activate</td>
+                        <td>Choose one of your paired units as your main actor.</td>
+                    </tr>
+                    <tr>
+                        <td>2. Free Action</td>
+                        <td>Optional: Transport a Co-Pilot, or play 1 Wildcard.</td>
+                    </tr>
+                    <tr>
+                        <td>3. Act</td>
+                        <td>Attack, OR use its ability (not both).</td>
+                    </tr>
+                    <tr>
+                        <td>4. Resolve</td>
+                        <td>Apply damage/effects, pass the turn.</td>
+                    </tr>
+                </table>
+
+                <div class="rules-section">Win Condition</div>
+                <p class="rules-text">Reduce all of the opponent's paired Mechs to 0 HP. Last player standing wins.</p>
+
+                <div class="rules-section">Combat Basics</div>
+                <p class="rules-text">Retaliation: unless the attack destroys the target first, the defender hits back with its full AP, simultaneously.</p>
+                <p class="rules-text">Strike First: attacks before retaliation is possible - bypasses it entirely if the attack destroys the target.</p>
+                <p class="rules-text">Pairing: any Character can pair with any Mech. MATCH is a bonus for pairing the right Bond Trait, not a requirement to pair at all.</p>
+                <p class="rules-text">Wildcard Priority: if both players interrupt on the same action, resolve the last one played first (LIFO).</p>
+
+                <div class="rules-section">Keyword Glossary</div>
+                <table>
+                    <tr>
+                        <th>Term</th>
+                        <th>Meaning</th>
+                    </tr>
+                    <tr>
+                        <td>Bond / Match</td>
+                        <td>A Character's Bond Trait matches the paired Mech's class: +1 AP and +1 HP bonus.</td>
+                    </tr>
+                    <tr>
+                        <td>Base Pilot</td>
+                        <td>The primary pilot on a Mech. Ejects to reserve if the Mech is destroyed.</td>
+                    </tr>
+                    <tr>
+                        <td>Co-Pilot</td>
+                        <td>A second, stacked pilot on a Mech. Never ejects, even if the Mech is destroyed.</td>
+                    </tr>
+                    <tr>
+                        <td>Ejection</td>
+                        <td>Base Pilot survives to reserve when its Mech is destroyed. No Redemption pilots cannot eject at all.</td>
+                    </tr>
+                    <tr>
+                        <td>Reserve</td>
+                        <td>Off-board holding area for an ejected pilot until Transport re-boards it as a Co-Pilot.</td>
+                    </tr>
+                    <tr>
+                        <td>Transport</td>
+                        <td>Free Action: move a Co-Pilot to a different Mech, or board a reserve pilot as Co-Pilot.</td>
+                    </tr>
+                    <tr>
+                        <td>Team Building</td>
+                        <td>Ability tag granting bonuses to allies. Blocked by the Isolated Dark Matter Penalty.</td>
+                    </tr>
+                    <tr>
+                        <td>Interrupt</td>
+                        <td>An effect played out of normal turn order.</td>
+                    </tr>
+                    <tr>
+                        <td>Dark Matter</td>
+                        <td>Roster-build option: corrupt one of your own cards with 1 Gain + 1 Penalty together.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
         <button class="accordion active">Characters</button>
         <div class="panel">
             <h2>Character Cards</h2>
@@ -399,8 +481,8 @@
                         <p class="card-flavor">"Take the hit and keep pushing through!"</p>
                     </div>
                     <div class="card-footer">
-                        <div class="card-stat"><span class="card-stat-label">AP</span><strong>+4</strong></div>
-                        <div class="card-stat"><span class="card-stat-label">HP</span><strong>+6</strong></div>
+                        <div class="card-stat"><span class="card-stat-label">AP</span><strong>+2</strong></div>
+                        <div class="card-stat"><span class="card-stat-label">HP</span><strong>+8</strong></div>
                     </div>
                 </div>
                 <div class="card">
@@ -841,7 +923,8 @@
                     <div class="card-body">
                         <div class="card-meta"><span class="card-role">Arena</span></div>
                         <ul class="card-text">
-                            <li>Each unit's ability is locked on its first activation.</li>
+                            <li>Each unit's first random ability result is locked in for the rest of the game.</li>
+                            <li class="card-text-secondary">Only affects abilities with a random result (e.g. a coin flip). Others are unaffected.</li>
                         </ul>
                         <p class="card-flavor">"There is no control here."</p>
                     </div>
@@ -900,7 +983,7 @@
                     </tr>
                     <tr>
                         <td>Dark Matter</td>
-                        <td>Marker attached to a Mech at roster-build time. Grants a stat bonus and a penalty for the rest of the game. Not drafted turn-by-turn.</td>
+                        <td>Marker attached to a Character or Mech at roster-build time. Grants a stat bonus and a penalty for the rest of the game. Not drafted turn-by-turn.</td>
                     </tr>
                     <tr>
                         <td>Arena</td>
@@ -1005,7 +1088,7 @@
                     <tr>
                         <td>Brute</td>
                         <td>Luck / Diversity</td>
-                        <td>Variable</td>
+                        <td>+2 AP / +0 HP</td>
                         <td>Wild Card - At the start of each combat, flip a coin: Heads = +2 AP this fight, Tails = +2 HP this fight.</td>
                     </tr>
                     <tr>
@@ -1091,7 +1174,6 @@
                         <td>Once per turn, when this unit deals damage, the target loses 1 additional HP.</td>
                     </tr>
                 </table>
-                <p class="rules-note">Steady Hand, Quick Study, and Coin Toss were not recoverable verbatim and are faithful reconstructions of their class themes - review and adjust to taste.</p>
 
                 <div class="rules-section">2.4 Dark Matter (risk/reward build option)</div>
                 <p class="rules-text">At roster-build time, ANY Character or Mech can be corrupted into Dark Matter. Corrupting a card means taking 1 Gain + 1 Penalty together - a trade, not a pure downside. Maximum 2 Dark Matter cards per roster.</p>
@@ -1185,7 +1267,7 @@
                     </tr>
                     <tr>
                         <td>Ionic Storms</td>
-                        <td>Each unit's ability is locked on its first activation.</td>
+                        <td>Each unit's first random ability result (e.g. a coin flip) is locked in for the rest of the game. Abilities without a random result are unaffected.</td>
                     </tr>
                     <tr>
                         <td>Monster Graveyard</td>
@@ -1420,8 +1502,8 @@
                     <tr>
                         <td>Gigatear</td>
                         <td>Tank</td>
-                        <td>4</td>
-                        <td>6</td>
+                        <td>2</td>
+                        <td>8</td>
                         <td>Regen Armor + DM</td>
                         <td>YES</td>
                     </tr>
@@ -1605,7 +1687,7 @@
                     </tr>
                     <tr>
                         <td>Ionic Storms</td>
-                        <td>Each unit's ability is locked on its first activation.</td>
+                        <td>Each unit's first random ability result (e.g. a coin flip) is locked in for the rest of the game. Abilities without a random result are unaffected.</td>
                     </tr>
                     <tr>
                         <td>Monster Graveyard</td>
@@ -1677,7 +1759,7 @@
             </div>
         </div>
         <button class="accordion">Coming in V2</button>
-        <div class="panel">
+        <div class="panel" id="v2-panel">
             <h2>Coming in V2</h2>
             <div class="rules-content">
 
