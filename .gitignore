@@ -8,6 +8,9 @@ desktop.ini
 .idea/
 *.swp
 
+# Claude Code local state
+.claude/
+
 # Dependency directories (in case tooling gets added later)
 node_modules/
 

@@ -12,7 +12,8 @@
   .accordion,
   .panel > h2,
   .rules-content,
-  .v2-subheading {
+  .v2-subheading,
+  #v2-panel {
     display: none !important;
   }
 
