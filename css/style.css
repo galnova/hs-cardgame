@@ -363,6 +363,37 @@ body {
   color: var(--muted-text);
 }
 
+.game-synopsis {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  margin: 0 0 20px 0;
+  padding: 14px 18px;
+  background: white;
+  border: 2px solid var(--card-border);
+  border-radius: var(--radius-md);
+}
+
+.game-synopsis-icon {
+  flex-shrink: 0;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: var(--hero-bg);
+}
+
+.game-synopsis-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 1024px) {
+  .game-synopsis {
+    width: 75%;
+  }
+}
+
 .accordion {
     background-color: #eee;
     color: #000;
